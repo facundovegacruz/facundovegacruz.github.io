@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #080e31;
+  color: white;
+}
+
+header {
+  background: linear-gradient(135deg, #0026ff, #bda8ff);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #080e31;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #080e31;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c2fefe;
+}
+
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #c2fefe;
+  border-bottom: 2px solid #c2fefe;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.sobre-mi-contenido {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sobre-mi-img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.proyecto {
+  background: #0e153a;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 4px solid #c2fefe;
+  border-radius: 8px;
+}
+
+.proyecto h3 {
+  color: white;
+  margin-top: 0;
+}
+
+.proyecto p {
+  color: #c2fefe;
+}
+
+footer {
+  background: linear-gradient(135deg, #100044, #0026ff);
+  text-align: center;
+  padding: 20px;
+  color: #080e31;
+  font-size: 0.9rem;
+}
+
+a[href^="mailto:"] {
+  color: #c2fefe;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a[href^="mailto:"]:hover {
+  text-decoration: underline;
+}
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.slides {
+  position: relative;
+  height: auto;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.slider .prev {
+  left: 10px;
+}
+
+.slider .next {
+  right: 10px;
+}
